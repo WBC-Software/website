@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+      document.documentElement.classList.add("js")
+    </script>
+
+    <title>WBC Software — Software Engineering &amp; Consulting</title>
+    <meta
+      name="description"
+      content="WBC Software provides software engineering, architecture, development and scalability consulting for companies that need to move faster."
+    />
+    <link rel="canonical" href="https://YOUR_DOMAIN_HERE/" />
+
+    <link rel="alternate" hreflang="en" href="https://YOUR_DOMAIN_HERE/?lang=en" />
+    <link rel="alternate" hreflang="pt-BR" href="https://YOUR_DOMAIN_HERE/?lang=pt" />
+    <link rel="alternate" hreflang="x-default" href="https://YOUR_DOMAIN_HERE/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WBC Software" />
+    <meta property="og:title" content="WBC Software — Software Engineering &amp; Consulting" />
+    <meta
+      property="og:description"
+      content="Software engineering, architecture and development for companies that need to move faster."
+    />
+    <meta property="og:url" content="https://YOUR_DOMAIN_HERE/" />
+    <meta property="og:image" content="https://YOUR_DOMAIN_HERE/assets/og-cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WBC Software — Software Engineering &amp; Consulting" />
+    <meta
+      name="twitter:description"
+      content="Software engineering, architecture and development for companies that need to move faster."
+    />
+    <meta name="twitter:image" content="https://YOUR_DOMAIN_HERE/assets/og-cover.png" />
+
+    <meta name="theme-color" content="#080B0C" />
+    <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="assets/favicon-180.png" type="image/png" sizes="180x180" />
+    <link rel="apple-touch-icon" href="assets/favicon-180.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top">
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+    <!-- ── Navigation ─────────────────────────────────────────────────────── -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#top">
+          <img class="nav-mark" src="assets/wbc-mark.png" alt="" width="53" height="63" />
+          WBC<span class="nav-brand-sub">Software</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary" data-i18n-aria-label="a11y.navPrimary">
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#approach" data-i18n="nav.approach">Approach</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria-label="a11y.language">
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button class="lang-btn" type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+
+        <a class="nav-cta" href="#contact"
+          ><span data-i18n="nav.cta">Let&rsquo;s talk</span> <span class="btn-arrow" aria-hidden="true">&rarr;</span></a
+        >
+
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+          <span class="sr-only" data-i18n="a11y.menuOpen">Open menu</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" inert>
+      <nav class="mobile-menu-inner" aria-label="Mobile" data-i18n-aria-label="a11y.navMobile">
+        <a href="#services"
+          ><span class="mobile-menu-index" aria-hidden="true">01</span><span data-i18n="nav.services">Services</span></a
+        >
+        <a href="#problems"
+          ><span class="mobile-menu-index" aria-hidden="true">02</span><span data-i18n="nav.problems">Problems</span></a
+        >
+        <a href="#approach"
+          ><span class="mobile-menu-index" aria-hidden="true">03</span><span data-i18n="nav.approach">Approach</span></a
+        >
+        <a href="#model"
+          ><span class="mobile-menu-index" aria-hidden="true">04</span><span data-i18n="model.label">Model</span></a
+        >
+        <a href="#experience"
+          ><span class="mobile-menu-index" aria-hidden="true">05</span
+          ><span data-i18n="nav.experience">Experience</span></a
+        >
+        <a href="#stack"
+          ><span class="mobile-menu-index" aria-hidden="true">06</span><span data-i18n="stack.label">Stack</span></a
+        >
+        <a href="#about"
+          ><span class="mobile-menu-index" aria-hidden="true">07</span><span data-i18n="nav.about">About</span></a
+        >
+        <a href="#contact"
+          ><span class="mobile-menu-index" aria-hidden="true">08</span><span data-i18n="nav.contact">Contact</span></a
+        >
+
+        <div
+          class="lang-switch lang-switch-mobile"
+          role="group"
+          aria-label="Language"
+          data-i18n-aria-label="a11y.language"
+        >
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button class="lang-btn" type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+      </nav>
+    </div>
+
+    <main id="main">
+      <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+      <section class="hero">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-label" data-i18n="hero.eyebrow">WBC / Software Engineering</span>
+          </div>
+
+          <div class="hero-body">
+            <div class="hero-copy">
+              <h1 class="hero-title" data-i18n="hero.title">Engineering capacity for ambitious teams.</h1>
+              <p class="hero-lede" data-i18n="hero.lede">
+                Software engineering, architecture and development for companies that need to move faster.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact"
+                  ><span data-i18n="cta.start">Start a conversation</span>
+                  <span class="btn-arrow" aria-hidden="true">&rarr;</span></a
+                >
+
+                <a
+                  class="btn btn-ghost btn-whatsapp"
+                  data-wa
+                  href="https://wa.me/+5551995983895?text=Hi%21%20I%E2%80%99d%20like%20to%20talk%20about%20a%20software%20engineering%20project."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  <span data-i18n="cta.whatsapp">WhatsApp</span>
+                </a>
+
+                <a class="btn btn-quiet" href="#approach" data-i18n="hero.secondary">See how we work</a>
+              </div>
+
+              <p class="availability">
+                <span class="availability-dot" aria-hidden="true"></span>
+                <span data-i18n="hero.available">Available for select projects</span>
+              </p>
+            </div>
+
+            <div class="hero-panel-wrap">
+              <div class="panel hero-panel">
+                <div class="panel-bar" data-i18n="hero.panelBar">WBC / Engineering</div>
+                <dl class="panel-body">
+                  <div class="panel-row" style="--i: 0">
+                    <dt data-i18n="hero.architecture">architecture</dt>
+                    <dd>
+                      <span aria-hidden="true">&check;</span
+                      ><span class="sr-only" data-i18n="hero.covered">covered</span>
+                    </dd>
+                  </div>
+                  <div class="panel-row" style="--i: 1">
+                    <dt data-i18n="hero.infrastructure">infrastructure</dt>
+                    <dd>
+                      <span aria-hidden="true">&check;</span
+                      ><span class="sr-only" data-i18n="hero.covered">covered</span>
+                    </dd>
+                  </div>
+                  <div class="panel-row" style="--i: 2">
+                    <dt data-i18n="hero.scalability">scalability</dt>
+                    <dd>
+                      <span aria-hidden="true">&check;</span
+                      ><span class="sr-only" data-i18n="hero.covered">covered</span>
+                    </dd>
+                  </div>
+                  <div class="panel-row" style="--i: 3">
+                    <dt data-i18n="hero.delivery">delivery</dt>
+                    <dd>
+                      <span aria-hidden="true">&check;</span
+                      ><span class="sr-only" data-i18n="hero.covered">covered</span>
+                    </dd>
+                  </div>
+                </dl>
+                <dl class="panel-foot">
+                  <div class="panel-row" style="--i: 4">
+                    <dt>system.status</dt>
+                    <dd class="is-accent" data-i18n="hero.ready">ready</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 01 Services ──────────────────────────────────────────────────── -->
+      <section class="section" id="services">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;01</span>
+            <span class="gutter-label" data-i18n="services.label">Services</span>
+            <span class="gutter-rule" aria-hidden="true"></span>
+            <span class="gutter-meta" data-i18n="services.meta">4 disciplines</span>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title" data-reveal data-i18n="services.title">Engineering, not outsourcing.</h2>
+            <p class="section-lede" data-reveal data-i18n="services.lede">
+              Flexible engineering support for companies building, improving or scaling software.
+            </p>
+
+            <div class="cards">
+              <article class="card" data-reveal style="--reveal-i: 0">
+                <h3 class="card-label" data-i18n="services.build">Build</h3>
+                <p class="card-text" data-i18n="services.buildText">
+                  Build products, platforms, APIs and internal systems from scratch.
+                </p>
+              </article>
+              <article class="card" data-reveal style="--reveal-i: 1">
+                <h3 class="card-label" data-i18n="services.scale">Scale</h3>
+                <p class="card-text" data-i18n="services.scaleText">
+                  Improve performance, architecture and infrastructure as systems grow.
+                </p>
+              </article>
+              <article class="card" data-reveal style="--reveal-i: 2">
+                <h3 class="card-label" data-i18n="services.extend">Extend</h3>
+                <p class="card-text" data-i18n="services.extendText">
+                  Add experienced engineering capacity to an existing team.
+                </p>
+              </article>
+              <article class="card" data-reveal style="--reveal-i: 3">
+                <h3 class="card-label" data-i18n="services.fix">Fix</h3>
+                <p class="card-text" data-i18n="services.fixText">
+                  Identify and solve technical problems that slow the business down.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 02 Problems ──────────────────────────────────────────────────── -->
+      <section class="section" id="problems">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;02</span>
+            <span class="gutter-label" data-i18n="problems.label">Problems</span>
+            <span class="gutter-rule" aria-hidden="true"></span>
+            <span class="gutter-meta" data-i18n="problems.meta">5 patterns</span>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title" data-reveal data-i18n="problems.title">Built for the messy parts.</h2>
+
+            <ol class="problems">
+              <li class="problem" data-reveal>
+                <span class="problem-index" aria-hidden="true">01</span>
+                <div class="problem-body">
+                  <h3 class="problem-title" data-i18n="problems.1">Your API is getting slower.</h3>
+                  <p class="problem-text" data-i18n="problems.1text">
+                    Performance bottlenecks, inefficient queries, architecture problems and infrastructure constraints.
+                  </p>
+                </div>
+                <span class="problem-tag"
+                  ><span aria-hidden="true">&rarr;</span>
+                  <span data-i18n="problems.1tag">Performance &amp; scalability</span></span
+                >
+              </li>
+
+              <li class="problem" data-reveal>
+                <span class="problem-index" aria-hidden="true">02</span>
+                <div class="problem-body">
+                  <h3 class="problem-title" data-i18n="problems.2">Your team can&rsquo;t ship fast enough.</h3>
+                  <p class="problem-text" data-i18n="problems.2text">
+                    Add engineering capacity without creating another layer between your team and the work.
+                  </p>
+                </div>
+                <span class="problem-tag"
+                  ><span aria-hidden="true">&rarr;</span>
+                  <span data-i18n="problems.2tag">Engineering capacity</span></span
+                >
+              </li>
+
+              <li class="problem" data-reveal>
+                <span class="problem-index" aria-hidden="true">03</span>
+                <div class="problem-body">
+                  <h3 class="problem-title" data-i18n="problems.3">Your system wasn&rsquo;t designed to scale.</h3>
+                  <p class="problem-text" data-i18n="problems.3text">
+                    Improve architecture, infrastructure and data flows before growth becomes a problem.
+                  </p>
+                </div>
+                <span class="problem-tag"
+                  ><span aria-hidden="true">&rarr;</span> <span data-i18n="problems.3tag">Architecture</span></span
+                >
+              </li>
+
+              <li class="problem" data-reveal>
+                <span class="problem-index" aria-hidden="true">04</span>
+                <div class="problem-body">
+                  <h3 class="problem-title" data-i18n="problems.4">You need to build something new.</h3>
+                  <p class="problem-text" data-i18n="problems.4text">
+                    From MVPs to internal platforms and production systems.
+                  </p>
+                </div>
+                <span class="problem-tag"
+                  ><span aria-hidden="true">&rarr;</span>
+                  <span data-i18n="problems.4tag">Software development</span></span
+                >
+              </li>
+
+              <li class="problem" data-reveal>
+                <span class="problem-index" aria-hidden="true">05</span>
+                <div class="problem-body">
+                  <h3 class="problem-title" data-i18n="problems.5">Technical debt is becoming expensive.</h3>
+                  <p class="problem-text" data-i18n="problems.5text">
+                    Understand what&rsquo;s actually causing the problem and create a pragmatic path forward.
+                  </p>
+                </div>
+                <span class="problem-tag"
+                  ><span aria-hidden="true">&rarr;</span>
+                  <span data-i18n="problems.5tag">Technical consulting</span></span
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 03 Approach ──────────────────────────────────────────────────── -->
+      <section class="section" id="approach">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;03</span>
+            <span class="gutter-label" data-i18n="approach.label">Approach</span>
+            <span class="gutter-rule" aria-hidden="true"></span>
+            <span class="gutter-meta" data-i18n="approach.meta">4 steps</span>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title" data-reveal data-i18n="approach.title">Simple by design.</h2>
+            <p class="section-lede" data-reveal data-i18n="approach.lede">
+              No unnecessary layers. No complicated process.
+            </p>
+
+            <ol class="steps">
+              <li class="step" data-reveal style="--reveal-i: 0">
+                <span class="step-node" aria-hidden="true"></span>
+                <p class="step-index">01</p>
+                <h3 class="step-title" data-i18n="approach.1">Understand</h3>
+                <p class="step-text" data-i18n="approach.1text">
+                  Understand the business, the existing system and the actual problem.
+                </p>
+              </li>
+              <li class="step" data-reveal style="--reveal-i: 1">
+                <span class="step-node" aria-hidden="true"></span>
+                <p class="step-index">02</p>
+                <h3 class="step-title" data-i18n="approach.2">Diagnose</h3>
+                <p class="step-text" data-i18n="approach.2text">
+                  Identify the technical bottleneck, risk or opportunity.
+                </p>
+              </li>
+              <li class="step" data-reveal style="--reveal-i: 2">
+                <span class="step-node" aria-hidden="true"></span>
+                <p class="step-index">03</p>
+                <h3 class="step-title" data-i18n="approach.3">Build</h3>
+                <p class="step-text" data-i18n="approach.3text">
+                  Implement the smallest solution that solves the real problem.
+                </p>
+              </li>
+              <li class="step" data-reveal style="--reveal-i: 3">
+                <span class="step-node" aria-hidden="true"></span>
+                <p class="step-index">04</p>
+                <h3 class="step-title" data-i18n="approach.4">Improve</h3>
+                <p class="step-text" data-i18n="approach.4text">
+                  Measure, iterate and prepare the system for what&rsquo;s next.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 04 Model ─────────────────────────────────────────────────────── -->
+      <section class="section" id="model">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;04</span>
+            <span class="gutter-label" data-i18n="model.label">Model</span>
+            <span class="gutter-rule" aria-hidden="true"></span>
+            <span class="gutter-meta" data-i18n="model.meta">direct</span>
+          </div>
+
+          <div class="section-body">
+            <div class="model-layout">
+              <div class="model-copy">
+                <h2 class="section-title" data-reveal data-i18n="model.title">No layers. No handoffs.</h2>
+                <p class="section-lede" data-reveal data-i18n="model.lede">
+                  You work directly with the engineer building your software.
+                </p>
+                <p class="model-note" data-reveal data-i18n="model.note">
+                  Fewer layers mean faster communication, clearer decisions and stronger ownership from beginning to
+                  end.
+                </p>
+              </div>
+
+              <figure class="panel flow" data-reveal>
+                <figcaption class="sr-only" data-i18n="model.caption">
+                  Engagement model: work passes from your team directly to WBC, which handles architecture, development,
+                  infrastructure and delivery.
+                </figcaption>
+                <div class="panel-bar" data-i18n="model.panelBar">Engagement model</div>
+                <div class="flow-band" data-i18n="model.yourTeam">Your team</div>
+                <div class="flow-link" aria-hidden="true"></div>
+                <div class="flow-band flow-band-accent">WBC</div>
+                <div class="flow-link" aria-hidden="true"></div>
+                <ul class="flow-outputs">
+                  <li data-i18n="model.architecture">Architecture</li>
+                  <li data-i18n="model.development">Development</li>
+                  <li data-i18n="model.infrastructure">Infrastructure</li>
+                  <li data-i18n="model.delivery">Delivery</li>
+                </ul>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 05 Experience ────────────────────────────────────────────────── -->
+      <section class="section" id="experience">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;05</span>
+            <span class="gutter-label" data-i18n="experience.label">Experience</span>
+            <span class="gutter-rule" aria-hidden="true"></span>
+            <span class="gutter-meta" data-i18n="experience.meta">3 areas</span>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title" data-reveal data-i18n="experience.title">
+              Engineering experience that goes beyond the interface.
+            </h2>
+            <p class="section-lede" data-reveal data-i18n="experience.lede">
+              Selected engineering experience, drawn from prior professional engagements.
+            </p>
+
+            <div class="cases">
+              <article class="case" data-reveal style="--reveal-i: 0">
+                <h3 class="case-title" data-i18n="experience.1">High-volume payment infrastructure</h3>
+                <p class="case-text" data-i18n="experience.1text">
+                  Backend systems and infrastructure designed for high-volume financial operations, with a focus on
+                  reliability, performance and data consistency.
+                </p>
+                <p class="case-tech">NestJS &middot; PostgreSQL &middot; Redis &middot; AWS</p>
+              </article>
+
+              <article class="case" data-reveal style="--reveal-i: 1">
+                <h3 class="case-title" data-i18n="experience.2">Large-scale data processing</h3>
+                <p class="case-text" data-i18n="experience.2text">
+                  Distributed data processing and cloud infrastructure for workloads involving large datasets and
+                  asynchronous processing.
+                </p>
+                <p class="case-tech">AWS &middot; S3 &middot; Athena &middot; Python</p>
+              </article>
+
+              <article class="case" data-reveal style="--reveal-i: 2">
+                <h3 class="case-title" data-i18n="experience.3">Performance &amp; reliability</h3>
+                <p class="case-text" data-i18n="experience.3text">
+                  Diagnosing bottlenecks across APIs, databases and distributed systems to improve reliability and
+                  operational performance.
+                </p>
+                <p class="case-tech">PostgreSQL &middot; Node.js &middot; Redis &middot; AWS</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 06 Stack ─────────────────────────────────────────────────────── -->
+      <section class="section" id="stack">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;06</span>
+            <span class="gutter-label" data-i18n="stack.label">Stack</span>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title section-title-sm" data-reveal data-i18n="stack.title">
+              Modern engineering, pragmatic technology.
+            </h2>
+
+            <div class="panel stack" data-reveal>
+              <div class="panel-bar" data-i18n="stack.panelBar">Working stack</div>
+              <dl class="panel-body">
+                <div class="panel-row">
+                  <dt data-i18n="stack.frontend">Frontend</dt>
+                  <dd>React &middot; TypeScript &middot; Vite</dd>
+                </div>
+                <div class="panel-row">
+                  <dt data-i18n="stack.backend">Backend</dt>
+                  <dd>Node.js &middot; NestJS</dd>
+                </div>
+                <div class="panel-row">
+                  <dt data-i18n="stack.data">Data</dt>
+                  <dd>PostgreSQL &middot; Redis</dd>
+                </div>
+                <div class="panel-row">
+                  <dt data-i18n="stack.cloud">Cloud</dt>
+                  <dd>AWS &middot; Docker</dd>
+                </div>
+                <div class="panel-row">
+                  <dt data-i18n="stack.architecture">Architecture</dt>
+                  <dd data-i18n="stack.architectureValue">APIs &middot; Distributed Systems &middot; Scalability</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 07 About ─────────────────────────────────────────────────────── -->
+      <section class="section" id="about">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;07</span>
+            <span class="gutter-label" data-i18n="about.label">About</span>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title" data-reveal data-i18n="about.title">Small by design.</h2>
+            <div class="prose">
+              <p data-reveal data-i18n="about.p1">
+                WBC Software is an independent software engineering company focused on helping teams build, improve and
+                scale technology.
+              </p>
+              <p data-reveal data-i18n="about.p2">
+                Instead of creating layers between clients and engineers, WBC works directly with the people responsible
+                for solving the problem.
+              </p>
+              <p data-reveal data-i18n="about.p3">
+                The result is a more focused engagement, faster communication and a higher degree of technical
+                ownership.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 08 Contact ───────────────────────────────────────────────────── -->
+      <section class="section section-contact" id="contact">
+        <div class="section-grid">
+          <div class="gutter">
+            <span class="gutter-index">&sect;08</span>
+            <span class="gutter-label" data-i18n="contact.label">Contact</span>
+          </div>
+
+          <div class="section-body">
+            <div class="contact-block" data-reveal>
+              <h2 class="contact-title" data-i18n="contact.title">Have a problem worth solving?</h2>
+              <p class="contact-lede" data-i18n="contact.lede">Tell us what&rsquo;s slowing your team down.</p>
+
+              <div class="contact-actions">
+                <a class="btn btn-primary btn-lg" href="mailto:YOUR_EMAIL_HERE"
+                  ><span data-i18n="cta.start">Start a conversation</span>
+                  <span class="btn-arrow" aria-hidden="true">&rarr;</span></a
+                >
+
+                <a
+                  class="btn btn-ghost btn-lg btn-whatsapp"
+                  data-wa
+                  href="https://wa.me/+5551995983895?=Hi%21%20I%E2%80%99d%20like%20to%20talk%20about%20a%20software%20engineering%20project."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  <span data-i18n="cta.whatsapp">WhatsApp</span>
+                </a>
+              </div>
+
+              <ul class="contact-links">
+                <li><a href="https://www.linkedin.com/company/wbc-software">LinkedIn</a></li>
+                <li><a href="https://github.com/WBC-Software">GitHub</a></li>
+                <li><a href="mailto:software.wbc0@gmail.com" data-i18n="contact.email">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ───────────────────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-wordmark">
+            <img class="footer-mark" src="assets/wbc-mark.png" alt="" width="53" height="63" />
+            WBC Software
+          </p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Software Engineering &amp; Consulting</p>
+        </div>
+        <div class="footer-meta">
+          <p data-i18n="footer.location">S&atilde;o Paulo, Brazil &middot; Remote worldwide</p>
+          <p class="footer-copy">&copy; 2026 WBC Software</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
